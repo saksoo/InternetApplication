@@ -1,0 +1,57 @@
+Το sitemap για την εφαρμογή. Δείχνει πως οργανώνονται τα αρχεία για τις βασικές λειτουργίες (εγγραφη, σύνδεση, αποσύνδεση),
+αλλά και για τα μενού των 4 ειδών των χρηστών (administrator, manager, stuff, visitor).
+
+Σε κάθε αρχείο ακολουθείται η παρακάτω δομή:
+Ονομάζουμε το αρχείο, π.χ. register.jsp και μέσα σε αυτό κάνουμε include τα βασικά του στοιχεία, δηλαδή:
+	-- include header.jsp
+	-- include sidebar.jsp
+	++ Εδώ γράφουμε τον κώδικα για το register.php
+	-- include footer.jsp
+	
+
+Τα αρχεία της εφαρμογής οργανώνονται ως εξής:	
+
+index.jsp (Αρχική σελίδα)
++	register.jsp (Εγγραφή)
+		doregister.jsp (εσωτερικό αρχείο εγγραφής χρήστη)
++	login.jsp (Σύνδεση)
+		dologin.jsp (Αποσύνδεση)
+			login_success.jsp (Επιτυχής σύνδεση)
+--				administrator (Μενού για τον Υπεύθυνο εφαρμογής)
+					user_index_administrator.jsp (Αρχική σελίδα Υπευθύνου εφαρμογής)
+					user_list.jsp (Κατάλογος χρηστών)
+						change_role.jsp (Αλλαγή ρόλου χρήστη)
+							dochange_role.jsp (εσωτερικό αρχείο αλλαγής ρόλου)
+					project_list.jsp (Κατάλογος έργων)
+						create_project.jsp (Δημιουργία έργου)
+							docreate_project.jsp (εσωτερικό αρχείο δημιουργίας έργου)
+						change_view.jsp (Αλλαγή κατάστασης έργου σε public ή private)
+							dochange_view.jsp (εσωτερικό αρχείο αλλαγής κατάστασης)
+						change_desc.jsp (Αλλαγή περιγραφήε έργου)
+							dochange_desc.jsp (εσωτερικό αρχείο αλλαγής περιγραφής)
+						change_manager.jsp (Αλλαγή υπευθύνου έργου)
+							dochange_manager.jsp (εσωτερικό αρχείο αλλαγής υπευθύνου)
+						change_stuff.jsp (Αλλαγή προσωπικού του έργου)
+							dochange_stuff.jsp (εσωτερικό αρχείο αλλαγής προσωπικού)
+						delete_project.jsp (Διαγραφή έργου)
+							dodelete_project.jsp (εσωτερικό αρχείο διαγραφής έργου)
+--				manager (Υπεύθυνος έργου)
+					user_index_manager.jsp (Αρχική σελίδα Υπευθύνου έργου)
+					project_list_manager.jsp (Κατάλογος έργων που είναι υπεύθυνος)
+						works_list_manager.jsp (Κατάλογος εργασιών για ένα έργο)
+							create_work.jsp (Δημιουργία νέας εργασίας για το έργο)
+								docreate_work.jsp (Εσωτερικό αρχείο δημιουργίας εργασίας)
+					project_list_public.jsp (Κατάλογος δημοσίων έργων)
+--				stuff (Προσωπικό)
+					user_index_stuff.jsp (Αρχική σελίδα προσωπικού)
+					project_list_stuff.jsp (Κατάλογος έργων στα οποία εργάζεται)
+						works_list_stuff.jsp (Κατάλογος εργασιών που του έχουν ανατεθεί για ένα έργο)
+							dochange_done.jsp (Αλλαγή προόδου εργασίας)
+							change_comments.jsp (Αλλαγή σχολίων για μια εργασία)
+								dochange_comments.jsp (Εσωτερικό αρχείο αλλαγής σχολίων)
+					project_list_public.jsp (Κατάλογος δημοσίων έργων)
+--				visitor (Επισκέπτης)
+					user_index_visitor.jsp (Αρχική σελίδα επισκέπτη)
+					project_list_public.jsp (Κατάλογος δημοσίων έργων)
+			login_error.jsp (Αποτυχία σύνδεσης)
++	dologout.jsp (Αποσύνδεση)

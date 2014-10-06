@@ -1,0 +1,50 @@
+*{margin: 0;padding: 0;}
+body {background: #CCC;font: 74%/1.5em Verdana, Tahoma, arial, sans-serif;color: #555; text-align: center;}
+a{text-decoration: none;color: #2180BC;}
+a:hover {color: #88ac0b;text-decoration: underline;}
+h1 {font-size: 130%;	}
+h2 {font-size: 120%;color: #88ac0b;}
+h3 {font-size: 120%;color: #666666; margin:20px 0 10px 0;}
+p{text-align:justify; margin: 3px 0;}
+ul, ol {margin: 5px 20px;}
+ul li {list-style-image: url(../images/bullet.gif);}
+table {border-collapse: collapse;margin: 10px 0;}
+th strong {color: #fff;}
+th {	background: #93BC0C;height: 29px;padding-left: 5px;padding-right: 5px;color: #FFF;text-align: left;border-left: 1px solid #B6D59A;border-bottom: solid 2px #FFF;}
+tr {height: 30px;}
+td {padding-left: 5px;padding-right: 5px;border-left: 1px solid #FFF;border-bottom: solid 1px #93BC0C;}
+tr.row {background: #EFEFEF;}
+form {margin:10px 0; padding: 10px;border: 1px solid #f2f2f2;background-color: #DFDFDF;}
+label {display:block;font-weight:bold;margin:5px 0;}
+input {padding:2px;border:1px solid #eee;font: normal 1em Verdana, sans-serif;color:#777;}
+textarea {width:400px;padding:2px;font: normal 1em Verdana, sans-serif;border:1px solid #eee;height:100px;display:block;color:#777;}
+input.button { font: bold 12px Arial, Sans-serif; height: 24px;margin-top: 10px;padding: 2px 3px; color: #FFF;background: #8EB50C url(../images/button-bg.jpg) repeat-x 0 0;border: none;}
+.searchform {background-color: transparent;border: none;	margin: 0; padding: 5px 0 15px 0;width: 190px;	}
+.searchform input.textbox { width: 150px;color: #777; height: 18px;padding: 2px;	margin-top:3px;border: 1px solid #E5E5E5;vertical-align: top;}
+.searchform input.button { margin-top: 3px;height: 24px;padding: 2px 5px;vertical-align: top;}
+#wrap {width: 1000px;background: #CCC url(../images/content.jpg) repeat-y center top;margin: 0 auto;text-align: left;}
+#content-wrap {clear: both;width: 930px;padding: 0; margin: 10px auto;}
+#header {width: 1000px;position: relative;height: 103px;background: #CCC url(../images/header.jpg) no-repeat center top;padding: 0;	color: #FFF;}
+#header #logo-text {position: absolute;margin: 0; padding: 0;font: bolder 44px 'Trebuchet MS', Arial, Sans-serif;letter-spacing: -2px;color: #FFF;text-transform: none;top: 25px; left: 47px;}
+#header #slogan {position: absolute;margin-top: 7px;font: normal 12px 'Trebuchet MS', Arial, Sans-serif;text-transform: none;color: #FFF;top: 70px; left: 55px;		}
+#menu {clear: both;	margin: 0 auto; padding: 0;background: url(../images/menu.jpg) repeat-x 0 0;	font: bold 12px/37px Verdana, Arial, Tahoma, Sans-serif;height: 37px;width: 950px;}
+#menu ul {float: right;list-style: none;margin:0; padding: 0;}
+#menu ul li {display: inline;}
+#menu ul li a {display: block;float: left;padding: 0 10px;color: #FFF;	text-decoration: none;}
+#menu ul li a:hover {color: #D4E59F; text-decoration:underline;}
+#main {float: left;width: 70%; margin: 0 0 0 5px;display: inline;min-height:550px;}
+#main h1 {margin: 10px 0 10px 0;font: Bold 140% 'Trebuchet MS', Tahoma, Sans-serif;color: #88ac0b; border-bottom: 1px solid #EFF0F1;}
+#sidebar {float: right;width: 26%;padding: 0; margin: 0;	color: #68774A;}	
+#sidebar h1 {padding: 10px 0 0 0; font: bold 1.4em 'Trebuchet MS', Tahoma, Sans-serif;color: #728D26;}
+#sidebar ul.sidemenu {list-style: none;text-align: left;margin: 5px 0 5px 0;text-decoration: none;}
+#sidebar ul.sidemenu li {list-style: none;padding: 4px 0 4px 5px;	color: #68774A;}
+#sidebar ul.sidemenu li a {text-decoration: none;	background-image: none;	color: #666666;}
+#sidebar ul.sidemenu li a:hover {color: #1773BC; text-decoration:underline;}
+#footer {padding-top:20px;color: #C6DDEE;background: #CCC url(../images/footer.jpg) no-repeat center top;clear: both;width: 1000px;height: 65px;font-size: 92%;	}
+#footer p{text-align:center;}
+#footer a {color: #FFF;text-decoration: none;}
+.float-left  {float: left;}
+.float-right {float: right;}
+.align-left  {text-align: left;}
+.align-right {text-align: right;}
+.clear {clear: both;}
